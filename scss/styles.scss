@@ -127,24 +127,28 @@ nav {
 @media (max-width: 768px) {  
     header {  
         flex-direction: column;  
-        align-items: center;  
+        align-items: center; 
+        .navbar-nav {  
+            flex-direction: column;   
+            width: 100%;
+            display: flex;   
+    
+            .nav-item {  
+                width: 100%;   
+            }  
+    
+            .nav-link {  
+                padding: 15px;   
+                text-align: center; 
+            }  
+        }   
     }  
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
 
-    .navbar-nav {  
-        flex-direction: column;   
-        width: 100%;   
-
-        .nav-item {  
-            flex-direction: column; 
-            width: 100%;   
-        }  
-
-        .nav-link {  
-            flex-direction: column; 
-            padding: 15px;   
-            text-align: center; 
-        }  
-    }  
 }  
 
 /* Estilos para pie de página */  
